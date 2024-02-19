@@ -200,7 +200,7 @@ const Chat = () => {
                     if (done) break;
 
                     var text = new TextDecoder("utf-8").decode(value);
-                    const objects = text.split("\n");
+                    const objects = text.split('"}}\n');
                     objects.forEach((obj) => {
                         try {
                             if (obj !== "" && obj !== "{}") {
@@ -350,7 +350,7 @@ const Chat = () => {
                     if (done) break;
 
                     var text = new TextDecoder("utf-8").decode(value);
-                    const objects = text.split("\n");
+                    const objects = text.split('"}}\n');
                     objects.forEach((obj) => {
                         try {
                             if (obj !== "" && obj !== "{}") {
